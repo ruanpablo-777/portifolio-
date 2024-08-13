@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "hacker";
+    src: url("../public/hacker.ttf") format("truetype");
+}
+nav{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-evenly;
+    height: 92px;
+
+}
+ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+   & li {
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    
+}
+
+ a {
+    text-decoration: none;
+    color: rgb(22, 78, 116);
+    
+}
+
+
+img {
+    width: 40px;
+    height: 40px;
+    mix-blend-mode: screen; /* Combina as cores da imagem com o fundo */
+    /*filter: invert(1);  Inverte as cores para que o fundo preto fique branco */
+  }
+
+p{
+    font-family: "hacker";
+}
+
+
+.menu-icon {
+    display: none;
+}
+.menus {
+    display: none;
+    
+}
+@media screen and (max-width: 833px) {
+    nav {
+        display: flex;
+        height: 50px;
+        align-items: end;
+        justify-content:  space-between;
+    }
+    img {
+        margin-left: 20px;
+    }
+    .menus- {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .menus-desktop {
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+        margin-right: 20px;
+    }
+    .menus ul{
+        gap: 0px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        height: 50px;
+        position:absolute;
+        background-color: rgba(10, 38, 65, 0.153);
+        height: 150px;
+        padding: 10px;
+
+        & p {
+            margin: 2px;
+        }
+    }
+    .open {
+        display: flex;
+        justify-content: end;
+        
+
+    }
+}
+
